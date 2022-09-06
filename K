@@ -1,0 +1,29 @@
+#include <stdio.h>
+ 
+int main()
+{
+    long long int A,B,C;
+    scanf("%lld%lld%lld",&A,&B,&C);
+    if (A>=B && A>=C && B>=C)
+    {
+        printf("%lld %lld",C,A);
+    }
+        else if(A>=B && A>=C && B<=C)
+        printf("%lld %lld",B,A);
+ 
+        else if (B>=A && B>=C && A>=C)
+        printf("%lld %lld",C,B);
+ 
+        else if (B>=A && B>=C && C>=A)
+        printf("%lld %lld",A,B);
+ 
+        else if (C>=A && C>=B && B>=A)
+        printf("%lld %lld",A,C);
+ 
+        else if (C>=A && C>=B && A>=B)
+        printf("%lld %lld",B,C);
+ 
+ 
+ 
+    return 0;
+}
