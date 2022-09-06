@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main ()
+{
+long long int M,N;
+int x,y;
+scanf("%lld%lld",&M,&N);
+x=M%10;
+y=N%10;
+ 
+printf("%d",x+y);
+return 0;
+}
