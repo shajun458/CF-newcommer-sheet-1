@@ -1,16 +1,26 @@
 #include<stdio.h>
 int main()
 {
-    long long a,b,c,d,m1,m2,m3,m4,x;
-    scanf("%lld%lld%lld%lld",&a,&b,&c,&d);
-    m1=(a%100);
-    m2=(b%100);
-    m3=(c%100);
-    m4=(d%100);
-    x=((m1*m2*m3*m4)%100);
-    if(x==0||x==1||x==2||x==3||x==3||x==4||x==5||x==6||x==7||x==8||x==9)
-        printf("0%lld",x);
+    int l1,R1,l2,R2;
+    scanf("%d %d %d %d",&l1,&R1,&l2,&R2);
+    if(l2>=l1&&l2<=R1)//mane l2 er man l1 and R1 er majkhane thake
+    {
+        if(R2>=R1)
+            printf("%d %d",l2,R1);
+        else if(R1>=R2)
+          printf("%d %d",l2,R2);
+    }
+    else if(l1>=l2&&l1<=R2)
+    {
+        if(R1>=R2)
+            printf("%d %d",l1,R2);
+        else if(R2>=R1)
+            printf("%d %d",l1,R1);
+    }
     else
-        printf("%lld",x);
+    printf("-1\n");
     return 0;
+
+
+
 }
