@@ -1,13 +1,23 @@
 #include<stdio.h>
-int main()
+int main ()
 {
-    int dayss,month,year,days;
-    scanf("%d",&dayss);
-    year=dayss/365;//400/365=1 year
-    month=(dayss%365)/30;//400%365=35days/30=1 month
-    days=((dayss%365)%30)/1;//5/1=5days
-    printf("%d years\n",year);
-    printf("%d months\n",month);
+    int age,years,months,days,x;
+ 
+    scanf("%d",&age);
+ 
+    years= age/365;
+ 
+    x= age%365;
+    months= x/30;
+ 
+    days=x%30;
+ 
+    printf("%d years\n",years);
+ 
+    printf("%d months\n",months);
+ 
     printf("%d days\n",days);
+ 
     return 0;
+ 
 }
