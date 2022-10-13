@@ -1,16 +1,15 @@
-#include<stdio.h>
-#include<math.h>
-int main()
+#include <stdio.h>
+int main ()
 {
-        float N;s
-        scanf("%f",&N);
-        int x = ceil(N);
-        if ( x == N)
-        {
-                printf("int %d\n",(int)N);
-        }
-        else
-        {
-                printf("float %d %.3f\n",(int)N,N-(int)N);
-        }
-        return 0;
+    double n,x;
+    scanf("%lf",&n);
+ 
+    x= n-(int)n;
+ 
+    if (x==0)
+        printf("int %.lf\n",n );
+ 
+    else
+        printf("float %d %.3lf\n",(int)n,x);
+    return 0;
+ }
