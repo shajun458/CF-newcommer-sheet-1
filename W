@@ -1,36 +1,39 @@
+
 #include<stdio.h>
-int main()
+int main ()
 {
-    int a,b,c,sum,sub,mul;
-    char x,y;
-    scanf("%d %c %d %c %d",&a,&x,&b,&y,&c);
-    sum=a+b;
-    sub=(a-b);
-    mul=a*b;
-        if(x=='+')
+    long long int a,b,c,sum,sub,mul ;
+    char s,e;
+
+    scanf ("%lld %c %lld %c %lld",&a,&s,&b,&e, &c);
+
+    if (s== '+')
     {
-        if(a+b==c)
-            printf("Yes");
+        sum=a+b;
+
+        if (sum==c)
+            printf ("Yes\n");
         else
-            printf("%d",sum);
+        printf("%lld\n",sum);
     }
+    else if (s== '-')
+        {
+        sub=a-b;
 
-    else if(x=='-')
-    {
-        if(a-b==c)
-            printf("Yes");
+        if (sub==c)
+            printf ("Yes\n");
         else
-            printf("%d",sub);
-        }
+        printf("%lld\n",sub);
+    }
+     else if (s== '*')
+        {
+        mul=a*b;
 
-    else if(x=='*')
-    {
-        if(a*b==c)
-            printf("Yes");
+        if (mul==c)
+            printf ("Yes\n");
         else
-            printf("%d",mul);
-        }
-
-
+        printf("%lld\n",mul);
+    }
     return 0;
 }
+
